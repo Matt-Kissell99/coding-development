@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+        sport();
         System.out.println("Hello world");
 
         Car carObj = new Car("Orange", 4);
@@ -36,5 +37,15 @@ public class Main {
 //        Fixed size. Can not be increased or decrease once declared.
 //        the array occupies an amount of memory that is proportional to its size, independently of the number of elements that are actually of interest
 //        Can store a single type of primitives only.
+    }
+
+    public static void sport() {
+        Sport sport = new Sport();
+        String finalChoice = sport.getSportChoice();
+        System.out.println(finalChoice);
+
+        sport.setSportChoice("Football");
+        String changedChoice = sport.getSportChoice();
+        System.out.println(changedChoice);
     }
 }
