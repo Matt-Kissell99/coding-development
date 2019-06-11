@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+        randomNumber();
         sport();
         System.out.println("Hello world");
 
@@ -47,5 +48,13 @@ public class Main {
         sport.setSportChoice("Football");
         String changedChoice = sport.getSportChoice();
         System.out.println(changedChoice);
+    }
+
+    public static void randomNumber() {
+        SuperClass ultimate = new SuperClass();
+        ultimate.callMethod();
+
+        SubClass lower = new SubClass();
+        lower.callMethod();
     }
 }
