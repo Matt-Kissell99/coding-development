@@ -1,5 +1,20 @@
 public class Main {
     public static void main(String[] args) {
+        System.out.println(EnumTest.MEDIUM.getEnumType());
+        System.out.println("Current Thread: " + Thread.currentThread().getName());
+
+        Thread secondaryThread = new Thread();
+
+        System.out.println("Newly created thread is called: " + secondaryThread.getName());
+
+        secondaryThread.setName("New-Thread-Right-Here");
+
+        System.out.println("Changed name for thread is now: " + secondaryThread.getName());
+
+        MyThread extension = new MyThread();
+        extension.setName("Test of new thread");
+
+
         randomNumber();
         sport();
         System.out.println("Hello world");
